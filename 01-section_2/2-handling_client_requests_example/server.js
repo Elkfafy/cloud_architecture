@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     {
         const stylePage = fs.readFileSync('index.css', 'utf-8')
         res.writeHead(200, 'ok', {
-            "content-type": "text/stylesheet"
+            "content-type": "text/css"
         })
         res.end(stylePage)
     }
